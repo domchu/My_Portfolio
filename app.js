@@ -1,3 +1,17 @@
+const bars = document.querySelector(".bars");
+const mobileView = document.querySelector(".mobile-view");
+bars.addEventListener("click", () => {
+  if (bars.classList.contains("fa-bars")) {
+    mobileView.style.display = "block";
+    bars.classList.add("fa-times");
+    bars.classList.remove("fa-bars");
+  } else {
+    mobileView.style.display = "none";
+    bars.classList.add("fa-bars");
+    bars.classList.remove("fa-times");
+  }
+});
+
 let testimonial = document.querySelectorAll(".testimonial");
 
 const observer = new IntersectionObserver((entries) => {

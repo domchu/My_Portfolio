@@ -6,25 +6,25 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "lato", "poppins";
   scroll-behavior: smooth;
 }
 .header-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
-  padding: 20px 220px;
-  // background-image: url("./images/me3.jpg");
-  background-color: blue;
+  padding: 4rem 4rem;
+  background-color: lightseagreen;
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
   background-repeat: no-repeat;
+  position: relative;
 }
-.logo-img {
-  width: 70px;
+.logo {
+  width: 100px;
   height: 70px;
-  border-radius: 50%;
+  color: #fff;
 }
 .header {
   display: flex;
@@ -35,9 +35,8 @@ body {
   margin-left: 15px;
 }
 .menu li a {
-  font-size: 20px;
-  // margin: 0 15px;
-  margin: 5px;
+  font-size: 25px;
+  margin: 10px;
   text-transform: capitalize;
   color: #fff;
 }
@@ -56,7 +55,7 @@ body {
 }
 .icon {
   font-size: 15px;
-  margin-top: 20px;
+  // margin-top: 20px;
 }
 .fab {
   color: #fff;
@@ -90,16 +89,21 @@ body {
     transform: scale(1);
   }
 }
-
+.about-header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
 .list-text p {
   margin-top: 30px;
+  margin-bottom: 2rem;
   font-size: 40px;
   text-decoration: underline;
-  color: #fff;
+  color: #000;
   text-align: left;
 }
 .link {
-  margin-top: 40px;
+  margin-top: 50px;
   text-decoration: none;
   text-align: left;
   font-size: 25px;
@@ -107,10 +111,12 @@ body {
 .hire {
   border: 1px solid orangered;
   padding: 10px;
+  // width: 300px;
+  height: 30px;
   border-radius: 5px;
   background-color: orangered;
   color: #fff;
-  text-decoration: none;
+  // text-decoration: none;
   // width: 200px;
 }
 .img2 {
@@ -256,11 +262,11 @@ h1 {
 }
 // the email part
 .wave {
-  background-color: blue;
-  color: #fff;
-  height: 20vh;
+  background-color: lightseagreen;
+  color: #000;
+  height: auto;
   margin: 60px;
-  // padding: 30px;
+  width: 100%;
 }
 .wave p {
   text-align: center;
@@ -285,7 +291,7 @@ h1 {
   color: #000;
 }
 .menu2 li a:hover {
-  background-color: blue;
+  background-color: lightgray;
   color: #fff;
 
   // display: block;
@@ -312,4 +318,108 @@ h1 {
 .vertical-line {
   border-left: 1px solid #000;
   display: block;
+}
+.bars {
+  display: none;
+}
+.mobile-view {
+  display: none;
+}
+.times {
+  display: none;
+}
+// Animations
+@keyframes ComeFromBelow {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// Thed media responsiveness
+
+@media screen and(max-width:700px) {
+  .icon {
+    display: none;
+  }
+  .navlink {
+    display: none;
+  }
+
+  .mobile-view li {
+    padding: 4px 0;
+  }
+  .mobile-view a:focus {
+    background-color: #000;
+  }
+  .mobile-view a {
+    color: rgb(51, 50, 50);
+    font-size: 30px;
+  }
+  .mobile-view {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(0, 255, 238);
+    animation: ComeFromBelow 2s ease-in;
+  }
+  .list-text a {
+    margin-bottom: 20px !important;
+  }
+  .bars {
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .times {
+    font-size: 3rem;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin: 20px 30px;
+  }
+  .blog-text {
+    display: block;
+  }
+  .blog-subtext {
+    margin-bottom: 20px;
+  }
+  .about-header {
+    display: block;
+    text-align: center;
+  }
+  .list-text {
+    display: block;
+    justify-content: left;
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .photo-me {
+    margin-top: 4rem;
+  }
+  .about-me {
+    display: block;
+  }
+  .offer {
+    display: block;
+  }
+  .offer1 {
+    margin-bottom: 30px;
+  }
+  .testimonal-text1 {
+    display: block;
+  }
+  .footer-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .copy {
+    margin-bottom: 2rem;
+  }
 }

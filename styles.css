@@ -8,28 +8,30 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "lato", "poppins";
   scroll-behavior: smooth;
 }
 
 .header-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
-  padding: 20px 220px;
-  background-color: blue;
+  padding: 4rem 4rem;
+  background-color: lightseagreen;
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
   background-repeat: no-repeat;
+  position: relative;
 }
 
-.logo-img {
-  width: 70px;
+.logo {
+  width: 100px;
   height: 70px;
-  border-radius: 50%;
+  color: #fff;
 }
 
 .header {
@@ -47,8 +49,8 @@ body {
 }
 
 .menu li a {
-  font-size: 20px;
-  margin: 5px;
+  font-size: 25px;
+  margin: 10px;
   text-transform: capitalize;
   color: #fff;
 }
@@ -71,7 +73,6 @@ body {
 
 .icon {
   font-size: 15px;
-  margin-top: 20px;
 }
 
 .fab {
@@ -123,16 +124,26 @@ body {
   }
 }
 
+.about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
 .list-text p {
   margin-top: 30px;
+  margin-bottom: 2rem;
   font-size: 40px;
   text-decoration: underline;
-  color: #fff;
+  color: #000;
   text-align: left;
 }
 
 .link {
-  margin-top: 40px;
+  margin-top: 50px;
   text-decoration: none;
   text-align: left;
   font-size: 25px;
@@ -141,10 +152,10 @@ body {
 .hire {
   border: 1px solid orangered;
   padding: 10px;
+  height: 30px;
   border-radius: 5px;
   background-color: orangered;
   color: #fff;
-  text-decoration: none;
 }
 
 .img2 {
@@ -349,10 +360,11 @@ h1 {
 }
 
 .wave {
-  background-color: blue;
-  color: #fff;
-  height: 20vh;
+  background-color: lightseagreen;
+  color: #000;
+  height: auto;
   margin: 60px;
+  width: 100%;
 }
 
 .wave p {
@@ -382,7 +394,7 @@ h1 {
 }
 
 .menu2 li a:hover {
-  background-color: blue;
+  background-color: lightgray;
   color: #fff;
 }
 
@@ -416,5 +428,134 @@ h1 {
 .vertical-line {
   border-left: 1px solid #000;
   display: block;
+}
+
+.bars {
+  display: none;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.times {
+  display: none;
+}
+
+@-webkit-keyframes ComeFromBelow {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes ComeFromBelow {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .icon {
+    display: none;
+  }
+  .navlink {
+    display: none;
+  }
+  .mobile-view li {
+    padding: 4px 0;
+  }
+  .mobile-view a:focus {
+    background-color: #000;
+  }
+  .mobile-view a {
+    color: #333232;
+    font-size: 30px;
+  }
+  .mobile-view {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #00ffee;
+    -webkit-animation: ComeFromBelow 2s ease-in;
+            animation: ComeFromBelow 2s ease-in;
+  }
+  .list-text a {
+    margin-bottom: 20px !important;
+  }
+  .bars {
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .times {
+    font-size: 3rem;
+    color: #000;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 20px 30px;
+  }
+  .blog-text {
+    display: block;
+  }
+  .blog-subtext {
+    margin-bottom: 20px;
+  }
+  .about-header {
+    display: block;
+    text-align: center;
+  }
+  .list-text {
+    display: block;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .photo-me {
+    margin-top: 4rem;
+  }
+  .about-me {
+    display: block;
+  }
+  .offer {
+    display: block;
+  }
+  .offer1 {
+    margin-bottom: 30px;
+  }
+  .testimonal-text1 {
+    display: block;
+  }
+  .footer-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .copy {
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
