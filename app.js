@@ -11,6 +11,7 @@ bars.addEventListener("click", () => {
     bars.classList.remove("fa-times");
   }
 });
+// end of the bars toogle
 
 let testimonial = document.querySelectorAll(".testimonial");
 
@@ -22,6 +23,25 @@ const observer = new IntersectionObserver((entries) => {
 
 testimonial.forEach((test) => {
   observer.observe(test);
+});
+// end of the intersection observer
+
+let abt = document.querySelector(".abt"),
+  exp = document.querySelector(".exp"),
+  ski = document.querySelector(".ski"),
+  write = document.querySelector(".write"),
+  wrtUp = document.querySelector(".wrt-up"),
+  wrtUp1 = document.querySelector(".wrt-up1"),
+  wrtUp2 = document.querySelector(".wrt-up2");
+
+abt.addEventListener("click", () => {
+  write.textContent = wrtUp.textContent;
+});
+exp.addEventListener("click", () => {
+  write.textContent = wrtUp1.textContent;
+});
+ski.addEventListener("click", () => {
+  write.textContent = wrtUp2.textContent;
 });
 
 // let testimonial = document.querySelectorAll(".testimonial");
