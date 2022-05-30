@@ -9,6 +9,18 @@ body {
   font-family: "lato", "poppins";
   scroll-behavior: smooth;
 }
+.page-loader {
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  // border-color: #fff;
+  background-color: #fff;
+  // border-color: lightseagreen;
+}
 .header-wrapper {
   display: flex;
   justify-content: space-around;
@@ -314,6 +326,11 @@ iframe {
   text-align: center;
   margin-top: 20px;
   font-size: 30px;
+  font-style: oblique;
+  // font-family: "Verdana", "Geneva", Tahoma, sans-serif;
+}
+.menudiv {
+  display: none;
 }
 .email {
   margin-top: 20px;
@@ -371,6 +388,20 @@ iframe {
 .times {
   display: none;
 }
+.up {
+  right: 30px;
+  position: absolute;
+  z-index: 15;
+  color: lightseagreen;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-size: 40px;
+  transition: 1s;
+}
+.up:hover {
+  color: #000;
+  transform: rotateY(180deg);
+}
 // Animations
 @keyframes ComeFromBelow {
   0% {
@@ -390,7 +421,16 @@ iframe {
   .navlink {
     display: none;
   }
-
+  .menudiv {
+    display: flex;
+    // top: 20px;
+  }
+  .menudiv p {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
   .mobile-view li {
     padding: 4px 0;
   }

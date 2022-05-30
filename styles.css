@@ -12,6 +12,23 @@ body {
   scroll-behavior: smooth;
 }
 
+.page-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
 .header-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,6 +432,11 @@ iframe {
   text-align: center;
   margin-top: 20px;
   font-size: 30px;
+  font-style: oblique;
+}
+
+.menudiv {
+  display: none;
 }
 
 .email {
@@ -487,6 +509,24 @@ iframe {
   display: none;
 }
 
+.up {
+  right: 30px;
+  position: absolute;
+  z-index: 15;
+  color: lightseagreen;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-size: 40px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.up:hover {
+  color: #000;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 @-webkit-keyframes ComeFromBelow {
   0% {
     -webkit-transform: translateY(350px);
@@ -515,6 +555,17 @@ iframe {
   }
   .navlink {
     display: none;
+  }
+  .menudiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menudiv p {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 10px;
   }
   .mobile-view li {
     padding: 4px 0;
