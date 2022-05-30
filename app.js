@@ -71,6 +71,8 @@ ski.addEventListener("click", () => {
 // service.forEach((service) => {
 //   observer.unobserve(service);
 // });
+
+
 let scrollToTopBtn = document.querySelector(".up");
 
 scrollToTopBtn.onclick = () => {
@@ -79,3 +81,4 @@ scrollToTopBtn.onclick = () => {
     behavior: "smooth",
   });
 };
+// javascript code for back to top

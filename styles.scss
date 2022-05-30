@@ -413,7 +413,43 @@ iframe {
 }
 
 // Thed media responsiveness
+@media screen and (max-width: 900px) {
+  .icon a {
+    display: block;
+  }
+  .icon2 a {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .icon2 {
+    margin-top: 10px;
+  }
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonal-text1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    .blog-subtext {
+      margin-bottom: 25px;
+    }
+
+    .about h1 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
 @media screen and(max-width:700px) {
   .icon {
     display: none;
