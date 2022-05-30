@@ -71,3 +71,11 @@ ski.addEventListener("click", () => {
 // service.forEach((service) => {
 //   observer.unobserve(service);
 // });
+let scrollToTopBtn = document.querySelector(".up");
+
+scrollToTopBtn.onclick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
