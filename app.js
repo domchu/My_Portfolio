@@ -71,7 +71,7 @@ ski.addEventListener("click", () => {
 // service.forEach((service) => {
 //   observer.unobserve(service);
 // });
-
+// end of the intersection observer
 
 let scrollToTopBtn = document.querySelector(".up");
 
