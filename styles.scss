@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "lato", "poppins";
+  font-family: "sans-serif", poppins;
   scroll-behavior: smooth;
 }
 .page-loader {
@@ -17,9 +17,7 @@ body {
   width: 100%;
   height: 100%;
   align-items: center;
-  // border-color: #fff;
   background-color: #fff;
-  // border-color: lightseagreen;
 }
 .header-wrapper {
   display: flex;
@@ -568,5 +566,40 @@ iframe {
   }
   .copy {
     margin-bottom: 2rem;
+  }
+}
+// the portfolio part of the project
+
+.portfolio {
+  display: flex;
+
+  .image-portfolio {
+    background-color: #3b3b41;
+    width: 300px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .port-me {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    margin: 1.5rem 0;
+  }
+  .img {
+    align-items: center;
+    margin: 0 0.5rem 1rem;
+  }
+  .img h2 {
+    color: #fff;
+  }
+  .img p {
+    color: #fff;
+    margin: 3px;
+  }
+  .contact-tag {
+    display: flex;
   }
 }
