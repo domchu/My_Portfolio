@@ -616,6 +616,10 @@ iframe {
     flex-direction: column;
     align-items: flex-start;
   }
+  h3 {
+    color: #fff;
+    margin-left: 4rem;
+  }
   .linked {
     height: 0 !important;
     width: 0 !important;
@@ -629,6 +633,42 @@ iframe {
     text-align: right;
     margin-left: 1rem;
     color: #fff;
+    margin-top: 5px;
+  }
+}
+
+.educate {
+  margin-top: 3rem;
+
+  h2 {
+    color: #fff;
+  }
+}
+.first-edu {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+
+  // background-color: lightgrey;
+  padding: 1rem;
+
+  h3 {
+    // color: #000;
+    color: #fff;
+    margin-left: 1rem !important;
+    font-size: 1.2rem;
+  }
+  p {
+    color: #fff;
+    // color: #000;
+    font-weight: bold;
+  }
+  .first-edu-text {
+    color: #fff;
+    margin-left: 1rem;
+    // color: #000;
     margin-top: 5px;
   }
 }

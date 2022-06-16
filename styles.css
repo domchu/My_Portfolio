@@ -824,6 +824,11 @@ iframe {
           align-items: flex-start;
 }
 
+.portfolio h3 {
+  color: #fff;
+  margin-left: 4rem;
+}
+
 .portfolio .linked {
   height: 0 !important;
   width: 0 !important;
@@ -839,6 +844,47 @@ iframe {
   text-align: right;
   margin-left: 1rem;
   color: #fff;
+  margin-top: 5px;
+}
+
+.educate {
+  margin-top: 3rem;
+}
+
+.educate h2 {
+  color: #fff;
+}
+
+.first-edu {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 1rem;
+}
+
+.first-edu h3 {
+  color: #fff;
+  margin-left: 1rem !important;
+  font-size: 1.2rem;
+}
+
+.first-edu p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.first-edu .first-edu-text {
+  color: #fff;
+  margin-left: 1rem;
   margin-top: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
