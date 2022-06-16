@@ -569,23 +569,36 @@ iframe {
   }
 }
 // the portfolio part of the project
+.portfolio-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: lightgrey;
+  margin-bottom: 2rem;
+}
 
 .portfolio {
   display: flex;
   margin: 2rem 0;
   justify-content: space-around;
-  background-color: lightgrey;
+  width: 95%;
+  min-width: 95%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   .image-portfolio {
     background-color: #3b3b41;
-    width: 300px;
     text-align: center;
     display: block;
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    // position: absolute;
-    // z-index: 3;
   }
   .port-me {
     width: 90px;
@@ -670,5 +683,19 @@ iframe {
     margin-left: 1rem;
     // color: #000;
     margin-top: 5px;
+  }
+}
+.profile-portfolio {
+  margin-left: 1rem;
+
+  .profile-text {
+    text-align: left;
+    margin: 1rem;
+    font-size: 1.2rem;
+  }
+  p {
+    text-align: left;
+    color: #000;
+    margin: 0.7rem 0;
   }
 }

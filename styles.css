@@ -747,6 +747,23 @@ iframe {
   }
 }
 
+.portfolio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  min-width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: lightgrey;
+  margin-bottom: 2rem;
+}
+
 .portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,12 +771,16 @@ iframe {
   margin: 2rem 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: lightgrey;
+  width: 95%;
+  min-width: 95%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .portfolio .image-portfolio {
   background-color: #3b3b41;
-  width: 300px;
   text-align: center;
   display: block;
   -webkit-box-pack: center;
@@ -886,5 +907,21 @@ iframe {
   color: #fff;
   margin-left: 1rem;
   margin-top: 5px;
+}
+
+.profile-portfolio {
+  margin-left: 1rem;
+}
+
+.profile-portfolio .profile-text {
+  text-align: left;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.profile-portfolio p {
+  text-align: left;
+  color: #000;
+  margin: 0.7rem 0;
 }
 /*# sourceMappingURL=styles.css.map */
