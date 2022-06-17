@@ -707,3 +707,16 @@ iframe {
     margin-right: 4rem;
   }
 }
+.language {
+  display: flex;
+  margin-top: 1rem;
+
+  h5 {
+    margin-right: 2rem;
+    text-align: left;
+    flex: 1;
+  }
+  progress {
+    flex: 4;
+  }
+}
