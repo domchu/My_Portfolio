@@ -8,7 +8,6 @@
 }
 
 body {
-  font-family: "sans-serif", poppins;
   scroll-behavior: smooth;
 }
 
@@ -923,5 +922,16 @@ iframe {
   text-align: left;
   color: #000;
   margin: 0.7rem 0;
+}
+
+.expirence-yr-course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.expirence-yr-course .yr {
+  width: 300px;
+  margin-right: 4rem;
 }
 /*# sourceMappingURL=styles.css.map */

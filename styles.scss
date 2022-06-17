@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "sans-serif", poppins;
+  // font-family: "sans-serif", poppins;
   scroll-behavior: smooth;
 }
 .page-loader {
@@ -697,5 +697,13 @@ iframe {
     text-align: left;
     color: #000;
     margin: 0.7rem 0;
+  }
+}
+.expirence-yr-course {
+  display: flex;
+
+  .yr {
+    width: 300px;
+    margin-right: 4rem;
   }
 }
