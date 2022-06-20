@@ -631,7 +631,8 @@ iframe {
   }
   h3 {
     color: #fff;
-    margin-left: 4rem;
+    // margin-left: 4rem;
+    text-align: left !important;
   }
   .linked {
     height: 0 !important;
@@ -663,34 +664,32 @@ iframe {
   flex-wrap: wrap;
   justify-content: left;
   align-items: left;
-
-  // background-color: lightgrey;
+  text-align: left;
   padding: 1rem;
 
   h3 {
-    // color: #000;
     color: #fff;
     margin-left: 1rem !important;
     font-size: 1.2rem;
   }
   p {
     color: #fff;
-    // color: #000;
     font-weight: bold;
   }
-  .first-edu-text {
-    color: #fff;
-    margin-left: 1rem;
-    // color: #000;
-    margin-top: 5px;
+  .year {
+    color: #1097d6;
   }
+  // .first-edu-text {
+  //   color: #fff;
+  //   margin-left: 1rem;
+  //   margin-top: 5px;
+  // }
 }
 .profile-portfolio {
   margin-left: 1rem;
 
   .profile-text {
     text-align: left;
-    // margin: 3rem;
     font-size: 1.2rem;
   }
   p {

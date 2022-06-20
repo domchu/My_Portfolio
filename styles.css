@@ -847,7 +847,7 @@ iframe {
 
 .portfolio h3 {
   color: #fff;
-  margin-left: 4rem;
+  text-align: left !important;
 }
 
 .portfolio .linked {
@@ -889,6 +889,7 @@ iframe {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
+  text-align: left;
   padding: 1rem;
 }
 
@@ -903,10 +904,8 @@ iframe {
   font-weight: bold;
 }
 
-.first-edu .first-edu-text {
-  color: #fff;
-  margin-left: 1rem;
-  margin-top: 5px;
+.first-edu .year {
+  color: #1097d6;
 }
 
 .profile-portfolio {
