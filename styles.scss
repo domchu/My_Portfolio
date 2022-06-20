@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  // font-family: "sans-serif", poppins;
+  font-family: "roboto", poppins;
   scroll-behavior: smooth;
 }
 .page-loader {
@@ -690,13 +690,16 @@ iframe {
 
   .profile-text {
     text-align: left;
-    margin: 1rem;
+    // margin: 3rem;
     font-size: 1.2rem;
   }
   p {
     text-align: left;
     color: #000;
     margin: 0.7rem 0;
+  }
+  .upme {
+    margin-top: 2rem;
   }
 }
 .expirence-yr-course {
@@ -712,11 +715,15 @@ iframe {
   margin-top: 1rem;
 
   h5 {
-    margin-right: 2rem;
-    text-align: left;
-    flex: 1;
+    margin-right: 5rem;
   }
   progress {
-    flex: 4;
+    flex: 1;
+  }
+  i {
+    margin-right: 2rem;
+  }
+  .interest {
+    margin: 10px;
   }
 }
