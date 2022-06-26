@@ -27,7 +27,7 @@ body {
   background-color: lightseagreen;
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 30vh;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -66,7 +66,6 @@ body {
 }
 .icon {
   font-size: 15px;
-  // margin-top: 20px;
 }
 .fab {
   color: #fff;
@@ -78,22 +77,34 @@ body {
   transition: 1s;
 }
 .fab:hover {
-  // background-color: lightseagreen;
   background-color: #000;
   border: 1px solid #fff;
   color: #fff;
   transform: rotateY(180deg);
-  // background-color: #f33446;
-  // border: 1px solid #f33446;
 }
 .me {
   width: 350px;
   height: 400px;
-  // opacity: 0;
 }
-// .service {
-//   // opacity: 0;
-// }
+// the slider part of the project
+.slider-container {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  .slider {
+    height: 600px;
+    width: 100%;
+  }
+  .slider-img {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+
 .testimonial.show {
   opacity: 1;
   animation: ioa 1s ease-in;
